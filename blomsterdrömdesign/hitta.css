@@ -1,0 +1,150 @@
+.bakgrund {
+    background-image: url('tulips.jpeg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px; 
+    text-align: center;
+    height: 400px;
+  }
+  
+  .bakgrund {
+    background-image: 
+    
+        linear-gradient(to top, rgba(255, 255, 255, 0.5), transparent),
+        url('tulips.jpeg'); /* Din bakgrundsbild */
+    
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  h1 {
+    color:black; 
+    padding: 10px; 
+    border-radius: 10px; 
+    font-size: 50px;
+    font-family: 'Cinzel Decorative', serif;
+  
+  }
+  
+  h2{
+    color:black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Cinzel Decorative', serif;
+  }
+  
+  section{
+    color:black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 650px; /* Sätter en maxbredd för texten */
+    margin: auto; 
+    
+    }
+  
+  
+  
+  /* dehär är för meny*/
+  
+  ul {
+    list-style-type: none;
+    padding: 20px;
+    background-color:rgb(49, 80, 56) 
+   
+  }
+  
+  li a {
+    display: inline;
+    color:floralwhite;
+    text-decoration: none;
+    display: inline;
+  
+   
+  }
+  
+  a {
+    padding:0,5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  li {
+    text-align: center;
+      display: inline;
+      padding: 20px;
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  li a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+
+  #meny {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none; /* Ta bort punkterna från listan */
+    padding: 0; /* Ta bort padding */
+    background-color:rgb(57, 77, 57);
+  }
+  
+  #meny li {
+    padding: 10px 20px; /* Lägg till lite padding runt varje länk */
+  }
+  
+  #meny li a {
+    text-decoration: none; /* Ta bort understrykningen från länkarna */
+    color: #fff; /* Ändra textfärgen till vit */
+    font-family: 'Helvetica', sans-serif; /* Ändra typsnittet */
+    font-size: 1.1em; /* Justera textstorleken */
+  }
+  
+  #meny li a:hover {
+    color: #4CAF50; /* Ändra textfärgen till grön när muspekaren hovrar över länken */
+  }
+
+
+
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  .om-oss-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  .om-oss-header {
+    font-family: 'Josefin Slab', serif;
+    font-size: 36px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+
+  .om-oss-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+  }

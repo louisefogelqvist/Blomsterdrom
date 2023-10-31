@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="blomsterdrömdesign/bd.css" type="text/css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel+Decorative&family=Josefin+Slab:wght@100&family=Zen+Loop&display=swap" rel="stylesheet">
+
+<style>
+    .contact-form {
+      background-color:floralwhite;
+      padding: 20px;
+      width: 300px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    
+
+    <body onload="buildMenu()">
+   
+
+        <div class="bakgrund">
+            <h1 >BlomsterDröm</h1>
+            <h2>Blomsterhandel & blomsterbud</h2>
+    
+            
+        </div> 
+    
+    <br>
+    
+    
+        <ul id="meny">
+    
+        </ul>
+    
+    
+    <br>
+        
+      
+    
+         
+
+    
+
+    <div class="contact-form">
+        <div class="form-group">
+          <label for="firstname">Förnamn:</label>
+          <input type="text" id="firstname" name="firstname">
+        </div>
+        <div class="form-group">
+          <label for="lastname">Efternamn:</label>
+          <input type="text" id="lastname" name="lastname">
+        </div>
+        <div class="form-group">
+          <label for="email">Mail:</label>
+          <input type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="subject">Ärende:</label>
+          <textarea id="subject" name="subject"></textarea>
+        </div>
+        <button type="submit">Skicka in</button>
+      </div>
+
+      <script src = "script.js"> </script>
+
+</body>
+</html>
