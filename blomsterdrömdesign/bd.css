@@ -1,4 +1,4 @@
-
+x{border:solid 1px red}
 
 
 .bakgrund {
@@ -6,8 +6,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px; 
-  text-align: center;
-  height: 400px;
+  height: 500px;
 }
 
 .bakgrund {
@@ -18,6 +17,15 @@
   
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.center{
+  text-align: center;
+}
+
+.logo{
+width: 100px;
+height: auto;
 }
 
 h1 {
@@ -45,6 +53,7 @@ section{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   max-width: 650px; /* Sätter en maxbredd för texten */
   margin: auto; 
+
   
   }
 
@@ -61,14 +70,15 @@ section{
 
 ul {
   list-style-type: none;
-  padding: 20px;
-  background-color:rgb(49, 80, 56) 
+  padding: 0px;
+  background-color:rgb(49, 80, 56); 
+  margin-top:-20px
  
 }
 
 li a {
   display: inline;
-  color:floralwhite;
+  color:#fff;
   text-decoration: none;
   display: inline;
 
@@ -96,43 +106,70 @@ li a.active {
 }
 
 li a:hover:not(.active) {
-  background-color: #555;
   color: white;
 }
 
-/*text under meny*/ 
+#meny {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none; /* Ta bort punkterna från listan */
+  padding: 0; /* Ta bort padding */
+  background-color:rgb(57, 77, 57);
+}
+
+#meny li {
+  padding: 10px 20px; /* Lägg till lite padding runt varje länk */
+}
+
+#meny li a {
+  text-decoration: none; /* Ta bort understrykningen från länkarna */
+  color: #fff; /* Ändra textfärgen till vit */
+  font-family: 'Helvetica', sans-serif; /* Ändra typsnittet */
+  font-size: 1.1em; /* Justera textstorleken */
+}
+
+#meny li a:hover {
+  color: #4CAF50; /* Ändra textfärgen till grön när muspekaren hovrar över länken */
+}
+
+
+/*Under meny*/
+
 
 .inledning{
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 1em;
-  padding: 20px;
-  background-color:rgb(241, 222, 237); /* Sätt en bakgrundsfärg */
-  border-radius: 10px; /* Runda hörnen */
-  width: 300px; /* Justera bredden */
-  height: 120px; /* Justera höjden */
-
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6em;
+  padding: 3px;
+  background-color:rgba(255, 255, 0, 0.019); 
+  border-radius: 10px; 
+  width: 35%; 
+  height: 130px; 
+  align-self: flex-start;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .inledningen {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color:rgba(49, 80, 56, 0.242);
+  padding:15px;
+  
  
 }
 
 
 .side-image {
-  height: 120px; /* Sätt höjden på bilderna till samma värde som fyrkantens höjd */
+ /* Sätt höjden på bilderna till samma värde som fyrkantens höjd */
   justify-content: space-between;
-  width: auto;
-  height: 150px;
-  border-radius: 10px; /* Runda hörnen */
-  
+  width: 30%;
+  border-radius: 10px; 
+  border: 3px solid rgba(49, 80, 56, 0.264) ; /* Lägg till en svart ram som är 3 pixlar bred */
 }
 
-/*produktbilder*/ 
 
-.image-container {
+  .image-container {
   display: flex;
   justify-content: space-between;
 }
@@ -173,43 +210,27 @@ button:hover {
   background-color: #555; /* Ändra färg vid hover */
 }
 
-
-#meny {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none; /* Ta bort punkterna från listan */
-  padding: 0; /* Ta bort padding */
-  background-color:rgb(57, 77, 57);
+.star {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 2px;
 }
 
-#meny li {
-  padding: 10px 20px; /* Lägg till lite padding runt varje länk */
-}
 
-#meny li a {
-  text-decoration: none; /* Ta bort understrykningen från länkarna */
-  color: #fff; /* Ändra textfärgen till vit */
-  font-family: 'Helvetica', sans-serif; /* Ändra typsnittet */
-  font-size: 1.1em; /* Justera textstorleken */
-}
 
-#meny li a:hover {
-  color: #4CAF50; /* Ändra textfärgen till grön när muspekaren hovrar över länken */
-}
+
 
 /* Kontakt */
 
 .contact-form {
   width: 60%;
-  margin: 0 auto;
+  margin: auto;
   padding: 20px;
-  background-color: #f1f1f1;
+  background-color:rgba(49, 80, 56, 0.242);
   border-radius: 10px;
 }
 
-.form-group {
-  margin-bottom: 20px;
-}
+
 
 label {
   display: block;
@@ -228,6 +249,7 @@ input[type="text"], input[type="email"], textarea {
   border-radius: 5px;
 }
 
+
 button {
   background-color: #4CAF50;
   color: white;
@@ -243,3 +265,44 @@ button:hover {
   background-color: #45a049;
 }
 
+
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    line-height: 0;
+    text-align: center;
+
+}
+
+.kontakttext   {
+  text-align:center;
+  font-size: 18px;
+  line-height: 1.6;
+  width: 50%; 
+  margin: 0 auto;
+  font-family: 'Didact Gothic', sans-serif;
+  
+}
+
+
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.social-media {
+  display: inline-block;
+}
+
+.social-media a {
+  margin: 0 10px;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}

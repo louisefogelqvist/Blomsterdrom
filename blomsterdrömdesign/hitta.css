@@ -1,10 +1,12 @@
+x{border:solid 1px red}
+
+
 .bakgrund {
     background-image: url('tulips.jpeg'); 
     background-repeat: no-repeat;
     background-size: cover;
     padding: 20px; 
-    text-align: center;
-    height: 400px;
+    height: 500px;
   }
   
   .bakgrund {
@@ -15,6 +17,15 @@
     
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  .center{
+    text-align: center;
+  }
+  
+  .logo{
+  width: 100px;
+  height: auto;
   }
   
   h1 {
@@ -47,18 +58,20 @@
   
   
   
+  
   /* dehär är för meny*/
   
-  ul {
+ul {
     list-style-type: none;
-    padding: 20px;
-    background-color:rgb(49, 80, 56) 
+    padding: 0px;
+    background-color:rgb(49, 80, 56); 
+    margin-top:-20px
    
   }
   
   li a {
     display: inline;
-    color:floralwhite;
+    color:blueviolet;
     text-decoration: none;
     display: inline;
   
@@ -86,11 +99,9 @@
   }
   
   li a:hover:not(.active) {
-    background-color: #555;
     color: white;
   }
-
-
+  
   #meny {
     display: flex;
     justify-content: space-around;
@@ -113,10 +124,10 @@
   #meny li a:hover {
     color: #4CAF50; /* Ändra textfärgen till grön när muspekaren hovrar över länken */
   }
-
-
-
   
+  
+
+
   body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f5f5f5;
@@ -125,26 +136,106 @@
   }
   
  
-  .om-oss-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 50px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+
+  h3 {
+    font-family: 'Cormorant Garamond', serif;
+      font-size: 50px;
+      line-height: 0;
+      text-align: center;
+      margin-top: 80px;
+  
   }
 
-  .om-oss-header {
-    font-family: 'Josefin Slab', serif;
-    font-size: 36px;
+  /*text under meny*/ 
+
+h5{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 22px;
+
+}
+
+.nacka{
+    flex-grow: 1;
+    padding:20px;
+    flex-basis: 0;
+    font-family: 'Didact Gothic', sans-serif;
+    background-color:#fff;
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.tyreso{
+    flex-grow: 1;
+    padding:20px;
+    flex-basis: 0;
+    font-family: 'Didact Gothic', sans-serif;
+    background-color:#fff;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.soder{
+    flex-grow: 1;
+    padding:20px;
+    flex-basis: 0;
+    font-family: 'Didact Gothic', sans-serif;
+    background-color:#fff;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+ 
+  .flexbox{
+    display: flex;
+    flex-direction: row;
+}
+
+  .resten1{
+    flex-grow: 1;
+    background-color:rgba(49, 80, 56, 0.264) ;
+    padding:20px;
+}
+.resten2{
+    flex-grow: 2;
+    background-color:rgba(49, 80, 56, 0.128);
+    padding:20px;
+    width: 30%;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+
+}
+
+
+
+
+
+  /*sociala medier*/
+  
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
   }
   
 
-  .om-oss-text {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #666;
+  .social-media {
+    display: inline-block;
   }
+  
+  .social-media a {
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  
+  
+  
+  

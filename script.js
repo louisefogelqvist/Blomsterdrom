@@ -10,9 +10,10 @@ function buildMenu()
 {
     var links = [
         ["Startsidan", "index.html"],
-        ["Hitta hit", "hittahit.html"],
+        ["Hitta hit", "hittaoss.html"],
         ["Om oss", "om.html"],
-        ["Kontakta oss", "kontakt.html"]
+        ["Kontakta oss", "kontakt.html"],
+        [ "Månadens bukett", "https://louisefogelqvist3.wordpress.com/"]
         
     ]
 
@@ -24,3 +25,10 @@ function buildMenu()
     document.getElementById("meny").innerHTML = menyHtml
 
 }
+
+
+
+
+
+
+
